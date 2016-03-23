@@ -70,7 +70,7 @@ public class SearchCommand {
             for (index, item) in items.enumerate() {
                 let repository = Repository(
                     fullName: item["full_name"].stringValue,
-                    url: item["url"].stringValue,
+                    url: item["html_url"].stringValue,
                     description: item["description"].stringValue,
                     stars: item["stargazers_count"].intValue)
                 let finished = headerType == .Finished && index == items.count - 1
