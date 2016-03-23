@@ -30,7 +30,7 @@ public struct SearchCommand {
     public func createNewFile() -> String {
         let fileDate = "\(NSDate().timeIntervalSince1970)".stringByReplacingOccurrencesOfString(".", withString: "")
         let fileName = "githubstarlight\(fileDate).md"
-        let contents = "# GitHub Search Result\n" + "Search query: \(self.query)\n" + "|Name|Description|Stars|\n" + "|:---:|:---:|:---:|\n"
+        let contents = "# GitHub Search Result\n" + "Search query: \(self.query)\n\n" + "|Name|Stars|Description|\n" + "|:---:|:---:|:---:|\n"
         NSFileManager.defaultManager().createFileAtPath(fileName, contents: contents.dataUsingEncoding(NSUTF8StringEncoding), attributes: nil)
         return fileName
     }
@@ -39,7 +39,7 @@ public struct SearchCommand {
         let url = NSURL(string: "https://api.github.com/search/repositories?sort=stars&order=desc&page=\(page)&q=\(self.query)")!
         let request = NSMutableURLRequest(URL: url)
         if let token = NSProcessInfo.processInfo().environment["GITHUB_TOKEN"] {
-            request.setValue(token, forHTTPHeaderField: "OAUTH-TOKEN")
+            request.setValue("token \(token)", forHTTPHeaderField: "Authorization")
         }
         let task = self.session.dataTaskWithRequest(request) { data, response, error in
             let json = JSON(data: data!)

@@ -10,7 +10,6 @@ import Foundation
 import GitHubStarlightKit
 
 func main(arguments: [String]) {
-    print(arguments)
     do {
         try CommandForm(arguments).command.execute()
     } catch let error {

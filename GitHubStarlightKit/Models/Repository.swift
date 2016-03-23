@@ -22,7 +22,7 @@ public struct Repository {
     }
     
     public var data: NSData {
-        let string = "|[\(fullName)](\(url))|\(description)|\(stars)|\n"
+        let string = "|[\(fullName)](\(url))|\(stars)|\(description)|\n"
         return string.dataUsingEncoding(NSUTF8StringEncoding)!
     }
 }
