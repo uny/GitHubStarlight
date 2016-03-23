@@ -30,7 +30,7 @@ public struct SearchCommand {
     public func createNewFile() -> String {
         let fileDate = "\(NSDate().timeIntervalSince1970)".stringByReplacingOccurrencesOfString(".", withString: "")
         let fileName = "githubstarlight\(fileDate).md"
-        let contents = "# GitHub Search Result\n" + "Search query: \(self.query)\n\n" + "|Name|Stars|Description|\n" + "|:---:|:---:|:---:|\n"
+        let contents = "# GitHub Search Result\n" + "Search query: \(self.query)\n\n" + "|Name|Stars|Description|\n" + "|:---:|:---:|:---|\n"
         NSFileManager.defaultManager().createFileAtPath(fileName, contents: contents.dataUsingEncoding(NSUTF8StringEncoding), attributes: nil)
         return fileName
     }
