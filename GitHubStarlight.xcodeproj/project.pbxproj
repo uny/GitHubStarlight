@@ -13,6 +13,13 @@
 		BFD1230E1CA2F1D8007186B9 /* GitHubStarlightKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1230D1CA2F1D8007186B9 /* GitHubStarlightKitTests.swift */; };
 		BFD123121CA2F1D8007186B9 /* GitHubStarlightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD122FD1CA2F1D8007186B9 /* GitHubStarlightKit.framework */; };
 		BFD123131CA2F1D8007186B9 /* GitHubStarlightKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFD122FD1CA2F1D8007186B9 /* GitHubStarlightKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFD1231D1CA2F4FA007186B9 /* CommandForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1231C1CA2F4FA007186B9 /* CommandForm.swift */; };
+		BFD1232A1CA2FFAE007186B9 /* String+Colorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD123291CA2FFAE007186B9 /* String+Colorize.swift */; };
+		BFD1232D1CA300AB007186B9 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1232C1CA300AB007186B9 /* Error.swift */; };
+		BFD123301CA30174007186B9 /* SearchCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1232F1CA30174007186B9 /* SearchCommand.swift */; };
+		BFD123331CA302CE007186B9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD123321CA302CE007186B9 /* Repository.swift */; };
+		BFD123381CA3061E007186B9 /* SearchCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD123371CA3061E007186B9 /* SearchCommandTests.swift */; };
+		BFD1233C1CA312A7007186B9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1233B1CA312A7007186B9 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BFD122E61CA2F0E9007186B9 /* GitHubStarlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubStarlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD122E61CA2F0E9007186B9 /* githubstarlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = githubstarlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD122F01CA2F0E9007186B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFD122F61CA2F1A2007186B9 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BFD122FD1CA2F1D8007186B9 /* GitHubStarlightKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GitHubStarlightKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +70,13 @@
 		BFD123061CA2F1D8007186B9 /* GitHubStarlightKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubStarlightKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD1230D1CA2F1D8007186B9 /* GitHubStarlightKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubStarlightKitTests.swift; sourceTree = "<group>"; };
 		BFD1230F1CA2F1D8007186B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD1231C1CA2F4FA007186B9 /* CommandForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandForm.swift; sourceTree = "<group>"; };
+		BFD123291CA2FFAE007186B9 /* String+Colorize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Colorize.swift"; sourceTree = "<group>"; };
+		BFD1232C1CA300AB007186B9 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		BFD1232F1CA30174007186B9 /* SearchCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCommand.swift; sourceTree = "<group>"; };
+		BFD123321CA302CE007186B9 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BFD123371CA3061E007186B9 /* SearchCommandTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCommandTests.swift; sourceTree = "<group>"; };
+		BFD1233B1CA312A7007186B9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Carthage/Checkouts/SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +119,7 @@
 		BFD122E71CA2F0E9007186B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFD122E61CA2F0E9007186B9 /* GitHubStarlight.app */,
+				BFD122E61CA2F0E9007186B9 /* githubstarlight.app */,
 				BFD122FD1CA2F1D8007186B9 /* GitHubStarlightKit.framework */,
 				BFD123061CA2F1D8007186B9 /* GitHubStarlightKitTests.xctest */,
 			);
@@ -124,6 +138,12 @@
 		BFD122FE1CA2F1D8007186B9 /* GitHubStarlightKit */ = {
 			isa = PBXGroup;
 			children = (
+				BFD123391CA31266007186B9 /* Libraries */,
+				BFD123311CA30262007186B9 /* Models */,
+				BFD1232E1CA30169007186B9 /* Commands */,
+				BFD1232B1CA3009A007186B9 /* Enumerations */,
+				BFD123281CA2FF9F007186B9 /* Extensions */,
+				BFD1231B1CA2F4E0007186B9 /* Forms */,
 				BFD122FF1CA2F1D8007186B9 /* GitHubStarlightKit.h */,
 				BFD123011CA2F1D8007186B9 /* Info.plist */,
 			);
@@ -133,10 +153,75 @@
 		BFD1230C1CA2F1D8007186B9 /* GitHubStarlightKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				BFD123341CA305E6007186B9 /* Commands */,
 				BFD1230D1CA2F1D8007186B9 /* GitHubStarlightKitTests.swift */,
 				BFD1230F1CA2F1D8007186B9 /* Info.plist */,
 			);
 			path = GitHubStarlightKitTests;
+			sourceTree = "<group>";
+		};
+		BFD1231B1CA2F4E0007186B9 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				BFD1231C1CA2F4FA007186B9 /* CommandForm.swift */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		BFD123281CA2FF9F007186B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BFD123291CA2FFAE007186B9 /* String+Colorize.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFD1232B1CA3009A007186B9 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				BFD1232C1CA300AB007186B9 /* Error.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		BFD1232E1CA30169007186B9 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				BFD1232F1CA30174007186B9 /* SearchCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		BFD123311CA30262007186B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFD123321CA302CE007186B9 /* Repository.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BFD123341CA305E6007186B9 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				BFD123371CA3061E007186B9 /* SearchCommandTests.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		BFD123391CA31266007186B9 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				BFD1233A1CA31299007186B9 /* SwiftyJSON */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		BFD1233A1CA31299007186B9 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BFD1233B1CA312A7007186B9 /* SwiftyJSON.swift */,
+			);
+			name = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +254,7 @@
 			);
 			name = GitHubStarlight;
 			productName = GitHubStarlight;
-			productReference = BFD122E61CA2F0E9007186B9 /* GitHubStarlight.app */;
+			productReference = BFD122E61CA2F0E9007186B9 /* githubstarlight.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BFD122FC1CA2F1D8007186B9 /* GitHubStarlightKit */ = {
@@ -288,6 +373,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD1231D1CA2F4FA007186B9 /* CommandForm.swift in Sources */,
+				BFD1232D1CA300AB007186B9 /* Error.swift in Sources */,
+				BFD123331CA302CE007186B9 /* Repository.swift in Sources */,
+				BFD1233C1CA312A7007186B9 /* SwiftyJSON.swift in Sources */,
+				BFD1232A1CA2FFAE007186B9 /* String+Colorize.swift in Sources */,
+				BFD123301CA30174007186B9 /* SearchCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD1230E1CA2F1D8007186B9 /* GitHubStarlightKitTests.swift in Sources */,
+				BFD123381CA3061E007186B9 /* SearchCommandTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,10 +499,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = GitHubStarlight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.ynagai.GitHubStarlight;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = githubstarlight;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -420,16 +513,18 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = GitHubStarlight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.ynagai.GitHubStarlight;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = githubstarlight;
 			};
 			name = Release;
 		};
 		BFD123151CA2F1D8007186B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -443,6 +538,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = info.ynagai.GitHubStarlightKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -451,6 +547,7 @@
 		BFD123161CA2F1D8007186B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
