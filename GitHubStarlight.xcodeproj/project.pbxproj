@@ -18,8 +18,8 @@
 		BFD1232D1CA300AB007186B9 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1232C1CA300AB007186B9 /* Error.swift */; };
 		BFD123301CA30174007186B9 /* SearchCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1232F1CA30174007186B9 /* SearchCommand.swift */; };
 		BFD123331CA302CE007186B9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD123321CA302CE007186B9 /* Repository.swift */; };
-		BFD123381CA3061E007186B9 /* SearchCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD123371CA3061E007186B9 /* SearchCommandTests.swift */; };
 		BFD1233C1CA312A7007186B9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1233B1CA312A7007186B9 /* SwiftyJSON.swift */; };
+		BFD1236E1CA3429B007186B9 /* ResponseHeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1236D1CA3429B007186B9 /* ResponseHeaderType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +75,8 @@
 		BFD1232C1CA300AB007186B9 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		BFD1232F1CA30174007186B9 /* SearchCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCommand.swift; sourceTree = "<group>"; };
 		BFD123321CA302CE007186B9 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		BFD123371CA3061E007186B9 /* SearchCommandTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCommandTests.swift; sourceTree = "<group>"; };
 		BFD1233B1CA312A7007186B9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Carthage/Checkouts/SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
+		BFD1236D1CA3429B007186B9 /* ResponseHeaderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseHeaderType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				BFD1232C1CA300AB007186B9 /* Error.swift */,
+				BFD1236D1CA3429B007186B9 /* ResponseHeaderType.swift */,
 			);
 			path = Enumerations;
 			sourceTree = "<group>";
@@ -203,7 +204,6 @@
 		BFD123341CA305E6007186B9 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
-				BFD123371CA3061E007186B9 /* SearchCommandTests.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -373,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD1236E1CA3429B007186B9 /* ResponseHeaderType.swift in Sources */,
 				BFD1231D1CA2F4FA007186B9 /* CommandForm.swift in Sources */,
 				BFD1232D1CA300AB007186B9 /* Error.swift in Sources */,
 				BFD123331CA302CE007186B9 /* Repository.swift in Sources */,
@@ -387,7 +388,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD1230E1CA2F1D8007186B9 /* GitHubStarlightKitTests.swift in Sources */,
-				BFD123381CA3061E007186B9 /* SearchCommandTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

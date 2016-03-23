@@ -12,8 +12,15 @@ public struct CommandForm {
     public let command: SearchCommand
     
     public init(_ arguments: [String]) throws {
-        guard arguments.count > 1 else { throw Error.CommandError }
+        let count = arguments.count
+        guard count > 1 else { throw Error.InvalidCommand }
         let query = arguments[1]
-        self.command = SearchCommand(query: query)
+        let tokens: [String]
+        if count > 2 {
+            tokens = Array(arguments[2..<count])
+        } else {
+            tokens = []
+        }
+        self.command = SearchCommand(query: query, tokens: tokens)
     }
 }

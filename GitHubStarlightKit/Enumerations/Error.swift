@@ -9,7 +9,8 @@
 import Foundation
 
 public enum Error: ErrorType {
-    case CommandError
+    case InvalidCommand
+    case RateLimitExceeded
     
     public var message: String {
         return ""
